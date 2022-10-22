@@ -158,16 +158,17 @@ const NftUploader = () => {
           )}
       </div>
       <div className="nftUplodeBox">
+      <input className="cta-button nftUploadInput" multiple name="imageURL" type="file" accept=".jpg , .jpeg , .png" onChange={imageToNFT}/>
         <div className="imageLogoAndText">
           <img src={ImageLogo} alt="imagelogo" />
           <p>Drag & Drop</p>
         </div>
-        <input className="cta-button nftUploadInput" multiple name="imageURL" type="file" accept=".jpg , .jpeg , .png" onChange={imageToNFT} disabled={!isNetwork}/>
+        
       </div>
       <p>or</p>
       <Button variant="contained">
         choose files
-        <input className="cta-button nftUploadInput" type="file" accept=".jpg , .jpeg , .png" onChange={imageToNFT} disabled={!isNetwork}/>
+        <input className="cta-button nftUploadInput" type="file" accept=".jpg , .jpeg , .png" onChange={imageToNFT}/>
       </Button>
 
           {loading ? (
