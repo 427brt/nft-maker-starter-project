@@ -1,3 +1,21 @@
+.App {
+  height: 100vh;
+  overflow: scroll;
+  text-align: center;
+  background: linear-gradient(-135deg, #ec23db, #99db2f);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  padding-top: 0px;
+}
+
 .outerBox {
     display: flex;
     flex-direction: column;
@@ -5,10 +23,15 @@
     justify-content: center;
     text-align: center;
     border: none;
-    padding: 36px;
+    color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 8px gray;
-    color: gray;
+    box-shadow: 0px 0px 8px white;
+  }
+
+  .sub-text {
+    font-size: 25px;
+    color: white;
+    margin: 40px 40px;
   }
   
   .outerBox h2 {
@@ -16,8 +39,17 @@
     margin-top: 5px;
   }
   
+  .gradient-text {
+    font-size: 35px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, #4d3ed3 40%, #208ccf 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .nftUplodeBox {
-    border: 2px dashed #2d6395;
+    border: 2px dashed #010910;
     padding: 35px 60px;
     position: relative;
   }
@@ -34,4 +66,72 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
+  }
+
+  .footer-container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .footer-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .cta-button {
+    background: -webkit-linear-gradient(left, #89d4f4, #f49251);
+    margin-bottom: 20px;
+    height: 45px;
+    border: 0;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nftUploadInput {
+    background: -webkit-linear-gradient(left, #35aee2, #45aa16);
+    background-size: 200% 200%;
+    animation: gradient-animation 2.5s ease infinite;
+  }
+
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .text-orange-500 {
+    background: -webkit-linear-gradient(left, #b01e04, #f87474);
+    background-size: 100% 100%;
+    animation: gradient-animation 4s ease infinite;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  h2{
+    padding-top: 10px;
+  }
+
+  .desc{
+    color: white;
+    margin-bottom: 30px;
+  }
+  .text-green-500 {
+    background: -webkit-linear-gradient(left, #7F7FD5, #2dc6bc);
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+    margin-right: 42%;
+    margin-left: 42%;
+    border-radius: 20px;
+  }
+  
+  button:disabled {
+    background: grey;
   }
