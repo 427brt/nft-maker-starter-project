@@ -118,9 +118,9 @@
     margin-bottom: 30px;
   }
   .text-green-500 {
-    color:#ed0e0e;
+    color:-webkit-linear-gradient(left, #ED213A, #f5e8e7);;
     background-size: 200% 200%;
-    animation: gradient-animation 4s ease infinite;
+    animation: gradient-animation 3s ease infinite;
     margin-right: 42%;
     margin-left: 42%;
     border-radius: 20px;
