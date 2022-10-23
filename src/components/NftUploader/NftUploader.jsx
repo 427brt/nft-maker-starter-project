@@ -86,6 +86,7 @@ const NftUploader = () => {
         console.log("Mining...please wait");
         await nftTxn.wait();
         console.log(`Mined, see transaction: https://goerli.etherscan.io/tx/${nftTxn.hash}`);
+        
         //loading解除
         setLoading(false);
       } else {

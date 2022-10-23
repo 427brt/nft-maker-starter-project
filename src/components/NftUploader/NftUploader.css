@@ -118,7 +118,7 @@
     margin-bottom: 30px;
   }
   .text-green-500 {
-    background: -webkit-linear-gradient(left, #7F7FD5, #2dc6bc);
+    color:#ed0e0e;
     background-size: 200% 200%;
     animation: gradient-animation 4s ease infinite;
     margin-right: 42%;
