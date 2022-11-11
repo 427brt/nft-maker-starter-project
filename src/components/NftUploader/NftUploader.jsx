@@ -11,6 +11,7 @@ import githubLogo from "../assets/github-logo.svg";
 
 const GITHUB_HANDLE = "427brt";
 const GITHUB_LINK = `https://github.com/${GITHUB_HANDLE}`;
+const OPENSEA_LINK = `https://testnets.opensea.io/ja/account`;
 
 
 const NftUploader = () => {
@@ -88,7 +89,7 @@ const NftUploader = () => {
         console.log(`Mined, see transaction: https://goerli.etherscan.io/tx/${nftTxn.hash}`);
         alert(
           `あなたのウォレットに NFT を送信しました。OpenSea に表示されるまで最大で10分かかることがあります。
-          NFT へのリンクはこちらです: https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}`
+          NFT へのリンクはこちらです: ${OPENSEA_LINK}`
         );
         
         //loading解除
@@ -182,7 +183,12 @@ const NftUploader = () => {
             </p>
           ) : (
             <p className="sub-text text-blue-500">
-              
+              <a
+            className="footer-text"
+            href={OPENSEA_LINK}
+            target="_blank"  //別タブ
+            rel="noreferrer"
+          >{`OPENSEA LINK`}</a>
             </p>
           )}
         </div>
